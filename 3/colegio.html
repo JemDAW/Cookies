@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Crear Colegio</title>
+</head>
+
+<body>
+    
+  <form id="colegio">
+    <fieldset>
+        <legend>Datos para crear colegio:</legend>
+    <label for="nombreCol">Nombre del colegio:</label>
+    <input id="nombreCol" type="text">
+    <br>
+    <label for="numAulas">Número de aulas:</label>
+    <input id="numAulas" type="number">
+    <br>
+    <label for="numAlumnos">Número de Alumnos:</label>
+    <input id="numAlumnos" type="number">
+    <br>
+</fieldset>
+  </form>
+  <button id="addColegio">Crear colegio</button>
+
+  <form id="alumno">
+    <fieldset>
+        <legend>Datos para crear alumno:</legend>
+    <label for="dniAlumno">DNI:</label>
+    <input id="dniAlumno" type="text">
+    <br>
+    <label for="nomAlumno">Nombre alumno:</label>
+    <input id="nomAlumno" type="text">
+    <br>
+    <label for="notaMedia">Nota media de alumno:</label>
+    <input id="notaMedia" type="number" step="0.1">
+    <br>
+    </fieldset>
+  </form>
+  <button id="addAlumno">Crear alumno</button>
+
+</body>
+<script type="module" src="modCol.js"></script>
+</html>
