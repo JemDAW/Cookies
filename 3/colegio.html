@@ -6,39 +6,46 @@
 </head>
 
 <body>
-    
+
+<section id="secCol"> 
   <form id="colegio">
     <fieldset>
         <legend>Datos para crear colegio:</legend>
     <label for="nombreCol">Nombre del colegio:</label>
-    <input id="nombreCol" type="text">
+    <input id="nombreCol" type="text" required>
     <br>
     <label for="numAulas">Número de aulas:</label>
-    <input id="numAulas" type="number">
+    <input id="numAulas" type="number" required>
     <br>
     <label for="numAlumnos">Número de Alumnos:</label>
-    <input id="numAlumnos" type="number">
+    <input id="numAlumnos" type="number" required>
     <br>
 </fieldset>
   </form>
   <button id="addColegio">Crear colegio</button>
+</section>
 
-  <form id="alumno">
-    <fieldset>
+<section id="secAlum">
+  <form >
+    <fieldset id="alumno">
         <legend>Datos para crear alumno:</legend>
     <label for="dniAlumno">DNI:</label>
-    <input id="dniAlumno" type="text">
+    <input id="dniAlumno" type="text" required>
     <br>
     <label for="nomAlumno">Nombre alumno:</label>
-    <input id="nomAlumno" type="text">
+    <input id="nomAlumno" type="text" required>
     <br>
     <label for="notaMedia">Nota media de alumno:</label>
-    <input id="notaMedia" type="number" step="0.1">
+    <input id="notaMedia" type="number" step="0.1" required>
     <br>
     </fieldset>
   </form>
   <button id="addAlumno">Crear alumno</button>
+</section>
 
+<div id="datosAlmacen">
+</div>
+<button id="borrarAlmacen">Borrar almacen entero</button>
 </body>
 <script type="module" src="modCol.js"></script>
 </html>

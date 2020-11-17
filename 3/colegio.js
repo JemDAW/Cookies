@@ -10,6 +10,11 @@ class colegio{
             this.addAlumnosIniciales(numero_alumnos);
         }
     }
+    mostrarAlumno(numAlumno){
+        let alumnoElegido= this.alumnos[numAlumno];
+        let stringAlumno= alumnoElegido.nombre + ' con DNI ' + alumnoElegido.DNI + ' y nota media ' + alumnoElegido.nota_media;
+        return stringAlumno;
+    }
 
     addAlumnosIniciales(numero_alumnos){
         for(let i=0;i<numero_alumnos;i++){
